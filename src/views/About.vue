@@ -15,10 +15,10 @@
         <div class="content-grid">
           <div class="content-text">
             <h2>{{ t('about.mission') }}</h2>
-            <p>{{ t('about.missionDesc') }}</p>
+            <p class="i18n-text-with-paragraphs">{{ t('about.missionDesc') }}</p>
           </div>
           <div class="content-image">
-            <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=600&auto=format&fit=crop"
+            <img src="@/assets/about-us-2.jpeg"
                  alt="Caregiving mission"
                  loading="lazy" />
           </div>
@@ -69,13 +69,13 @@
       <div class="container">
         <div class="content-grid reverse">
           <div class="content-image">
-            <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?w=600&auto=format&fit=crop"
+            <img src="@/assets/about-us-1.jpeg"
                  alt="Our story"
                  loading="lazy" />
           </div>
           <div class="content-text">
             <h2>{{ t('about.story') }}</h2>
-            <p>{{ t('about.storyDesc') }}</p>
+            <p class="i18n-text-with-paragraphs">{{ t('about.storyDesc') }}</p>
           </div>
         </div>
       </div>
@@ -98,6 +98,10 @@ const { t } = useI18n()
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.i18n-text-with-paragraphs {
+  white-space: pre-line;
 }
 
 /* Hero Section */
@@ -267,4 +271,3 @@ const { t } = useI18n()
   }
 }
 </style>
-

@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&auto=format&fit=crop"
+        <img src="@/assets/picture-1.jpeg"
              alt="Caregiver with elderly person"
              loading="lazy" />
       </div>
@@ -58,12 +58,41 @@
     <section class="image-section">
       <div class="container">
         <div class="image-grid">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&auto=format&fit=crop"
+          <img src="@/assets/picture-2.jpeg"
                alt="Professional caregiver"
                loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop"
+          <img src="@/assets/picture-3.jpeg"
                alt="Elderly care"
                loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="container">
+        <h2 class="section-title">{{ t('services.title') }}</h2>
+        <p class="section-intro i18n-text-with-paragraphs">{{ t('services.intro') }}</p>
+
+        <div class="services-grid">
+          <div class="service-category">
+            <h3>{{ t('services.servicesOfferedTitle') }}</h3>
+            <ul>
+              <li>{{ t('services.assistance') }}</li>
+              <li>{{ t('services.presence') }}</li>
+              <li>{{ t('services.psychological') }}</li>
+              <li>{{ t('services.adminHelp') }}</li>
+              <li>{{ t('services.accompaniment') }}</li>
+            </ul>
+          </div>
+          <div class="service-category">
+            <h3>{{ t('services.serviceTypesTitle') }}</h3>
+            <ul>
+              <li>{{ t('services.dayNight') }}</li>
+              <li>{{ t('services.temporary') }}</li>
+              <li>{{ t('services.longTerm') }}</li>
+              <li>{{ t('services.occasional') }}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -80,6 +109,15 @@ const { t } = useI18n()
 <style scoped>
 .home {
   background: #ffffff;
+}
+
+.i18n-text-with-paragraphs {
+  white-space: pre-line;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Hero Section */
@@ -157,11 +195,6 @@ const { t } = useI18n()
   padding: 5rem 2rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -231,10 +264,52 @@ const { t } = useI18n()
 
 .image-grid img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Services Section */
+.services-section {
+  padding: 5rem 2rem;
+  background: #D4F6FF;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.125rem;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.service-category h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.service-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-category li {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  color: #334155;
 }
 
 /* Animations */
@@ -287,6 +362,10 @@ const { t } = useI18n()
   }
 
   .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }
