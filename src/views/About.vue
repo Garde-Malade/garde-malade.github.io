@@ -18,7 +18,7 @@
             <p class="i18n-text-with-paragraphs">{{ t('about.missionDesc') }}</p>
           </div>
           <div class="content-image">
-            <img src="@/assets/about-us-2.jpeg"
+            <img src="@/assets/image-2.jpeg"
                  alt="Caregiving mission"
                  loading="lazy" />
           </div>
@@ -69,7 +69,7 @@
       <div class="container">
         <div class="content-grid reverse">
           <div class="content-image">
-            <img src="@/assets/about-us-1.jpeg"
+            <img src="@/assets/image-1.jpeg"
                  alt="Our story"
                  loading="lazy" />
           </div>

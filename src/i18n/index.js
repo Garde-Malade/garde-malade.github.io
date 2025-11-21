@@ -65,7 +65,8 @@ const messages = {
       message: 'Message',
       send: 'Send Message',
       sending: 'Opening your mail client...',
-      emailDirect: 'Or email us directly at',
+      emailDirect: 'Email us directly at',
+        phoneDirect: 'Call us at',
       fillAll: 'Please fill all fields.',
       validEmail: 'Please provide a valid email address.',
       clientNote: 'If your mail client did not open, please email garde.malade.harmony@gmail.com directly.'
@@ -137,7 +138,8 @@ const messages = {
       message: 'Message',
       send: 'Envoyer le Message',
       sending: 'Ouverture de votre client de messagerie...',
-      emailDirect: 'Ou envoyez-nous un email directement à',
+      emailDirect: 'Envoyez-nous un email directement à',
+        phoneDirect: 'Appelez-nous au',
       fillAll: 'Veuillez remplir tous les champs.',
       validEmail: 'Veuillez fournir une adresse email valide.',
       clientNote: 'Si votre client de messagerie ne s\'est pas ouvert, veuillez envoyer un email à garde.malade.harmony@gmail.com directement.'

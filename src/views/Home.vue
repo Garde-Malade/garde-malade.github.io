@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="@/assets/picture-1.jpeg"
+        <img src="@/assets/accueil-2.jpeg"
              alt="Caregiver with elderly person"
              loading="lazy" />
       </div>
@@ -58,11 +58,8 @@
     <section class="image-section">
       <div class="container">
         <div class="image-grid">
-          <img src="@/assets/picture-2.jpeg"
+          <img src="@/assets/accueil-1.jpeg"
                alt="Professional caregiver"
-               loading="lazy" />
-          <img src="@/assets/picture-3.jpeg"
-               alt="Elderly care"
                loading="lazy" />
         </div>
       </div>
